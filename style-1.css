@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Noto+Sans+Tangsa:wght@400;500&display=swap');
+body {
+    margin: 0;
+    text-align: left;
+    font-family:'Noto Sans Tangsa', sans-serif;
+}
+#content {
+width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: 75px 500px 50px 75px;
+
+}
+.one {
+
+grid-column: 1/13;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+}
+.two {
+
+grid-column: 2/6;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(12, 1fr);
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    grid-column: 1/4;
+    text-decoration: underline;
+
+}
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    grid-column: 1/4;
+    text-decoration: underline;
+
+}
+.primair {
+grid-column: 3/8;
+grid-row: 2/3;
+}
+.colorone {
+  grid-column: 3/5;
+  grid-row: 3/6;
+  background-color: rgb(23, 116, 143);
+}
+.colortwo {
+    grid-column: 6/8;
+    grid-row: 3/6;
+    background-color: rgb(86, 195, 214);
+}
+.colorthree {
+    grid-column: 9/11;
+    grid-row: 3/6;
+    background-color: white;
+    border: 1px solid black;
+}
+.secundair {
+    grid-column: 3/8;
+    grid-row: 7/8;
+}
+.colorfour {
+    grid-column: 3/5;
+    grid-row: 9/12;
+    background-color: rgb(43, 136, 66);
+}
+.colorfive {
+    grid-column: 6/8;
+    grid-row: 9/12;
+    background-color: rgb(104, 189, 42);
+}
+.colorsix {
+    grid-column: 9/11;
+    grid-row: 9/12;
+    background-color: black;
+}
+.buttonOne, .buttonTwo {
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    border-radius: 3px;
+}
+.buttonOne {
+grid-column : 2/4;
+padding: 10px;
+background-color: rgb(104, 189, 42);
+margin-top: 20px;
+padding-top: 15px;
+text-decoration: none;
+}
+.buttonOne:hover {
+background-color: rgb(43, 136, 66);
+}
+.buttonTwo {
+    grid-column : 7/9;
+    margin-top: 20px;
+    padding: 10px;
+    padding-top: 15px;
+    background-color: transparent;
+    border: 2px solid black;
+    text-decoration: none;
+}
+.buttonTwo:hover {
+    border: 3px solid black;
+}
+.four {
+    
+    grid-column: 6/13;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:  repeat(12, 1fr);
+    }
+    .three {
+       
+        grid-column: 7/12;
+        grid-row: 2/4;
+        }
+
+    .three h3 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 75px;
+        
+    }
+    .three h4 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 50px;
+    }
+    .para {
+        font-family: 'Noto Sans Tangsa', sans-serif;
+        font-weight: 300;
+    }
+    .paraBold {
+        font-family: 'Noto Sans Tangsa', sans-serif;
+        font-weight: 500;
+    }
+   
