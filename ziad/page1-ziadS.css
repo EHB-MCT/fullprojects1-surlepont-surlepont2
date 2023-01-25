@@ -18,7 +18,7 @@ body {
     grid-template-rows: repeat(6, 1fr);
     grid-column: 1/13;
     grid-row: 1/2;
-    
+    background-color: orange;
 }
 .logo img {
     width: 125%;
@@ -29,15 +29,19 @@ body {
     grid-column: 2/4;
     grid-row: 1/2;
 }
-.link{
+.link, .linkon{
     grid-row: 4/5;
 }
-.link a{
+
+.link a, .linkon a{
     text-decoration: none;
     color: gray;
     font-family: 'Noto Sans Tangsa', sans-serif;
     font-weight: 500px;
     transition: color 0.5s;
+}
+.linkon a {
+    color: black;
 }
 .link a:hover {
     color:black;
