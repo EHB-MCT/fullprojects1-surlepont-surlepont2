@@ -27,8 +27,7 @@ body {
 	grid-row: 1/2;
 }
 .link,
-.linkon,
-.langue {
+.linkon, .langue {
 	grid-row: 4/5;
 }
 
