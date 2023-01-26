@@ -10,15 +10,39 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px 1000px;
+    grid-template-rows: 200px 400px 500px 350px 500px 300px;
+    position: relative;
+    
+}
+
+#contentTwo {
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 90px 90px 90px 90px 90px 30px 1000px 90px 90px 30px;
+    position: absolute;
+    grid-gap: 10px;
+    z-index:2;
+}
+h2 {
+ font-family: 'Bebas Neue', cursive;
+ font-size: 40px;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+p {
+    font-family: 'Noto Sans Tangsa', sans-serif;
+
 }
 .header {
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column: 1/13;
     grid-row: 1/2;
-    background-color: orange;
+    
 }
 .logo img {
     width: 125%;
@@ -30,7 +54,7 @@ body {
     grid-row: 1/2;
 }
 .link, .linkon{
-    grid-row: 4/5;
+    grid-row: 3/4;
 }
 
 .link a, .linkon a{
@@ -46,6 +70,162 @@ body {
 .link a:hover {
     color:black;
 }
+
+/*intro*/
+
+.intro {
+    
+    grid-column: 1/13;
+    grid-row: 2/3;
+    
+    
+}
+.introimg img {
+    max-width: 100%;
+    margin-top: 13px;
+}
+.introtext {
+    grid-row: 4/5;
+    grid-column: 1/9;
+    background-color: white;
+}
+.introtext h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(249,212,28);
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: left;
+}
+.introparagraph {
+    grid-row: 5/6;
+    grid-column: 1/8;
+    background-color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+}
+.introlink {
+    grid-row: 6/7;
+    grid-column: 1/5;
+    background-color: rgb(249,212,28);
+    border-radius: 2px;
+}
+.introlink a {
+    color: black;
+    bottom: 10px;
+    font-size: 13px;
+}
+.introlink a {
+    text-decoration: none;
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    
+}
+
+
+/*mid body*/
+
+.kidimg {
+ grid-column: 1/13;
+ grid-row: 3/4;
+ background-color: white
+}
+.kidimg img {
+    width: 90%;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.kidtext {
+ grid-column: 1/13;
+ grid-row: 4/5;
+
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ grid-template-rows: repeat(6, 1fr);
+}
+.kidtext h2 {
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+.kidtext p {
+    grid-column: 2/6;
+    grid-row: 2/3;
+    font-weight: 500
+}
+.kidtext a {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    border: 2px solid black;
+    font-weight: 500px;
+    padding: 10px;
+}
+.kidtext a:hover {
+    border: 3px solid black;
+}
+.petition {
+ grid-column: 1/13;
+ grid-row: 5/6;
+ 
+}
+.petition img {
+    max-width: 100%;
+    height: 110%;
+}
+.petitionhead {
+    grid-row: 8/9;
+    grid-column: 1/9;
+    background-color: white;
+    font-size: 20px;
+    text-align: left;
+}
+.petitiontext {
+    grid-row: 9/10;
+    grid-column: 1/8;
+    text-align: left;
+    font-weight: 500;
+}
+.petitionlink {
+    grid-row: 10/11;
+    grid-column: 2/6;
+    background-color: rgb(249,212,28);
+    padding: 3px 20px 3px 20px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.petitionlink a {
+text-decoration: none;
+color: black;
+font-family: 'Noto Sans Tangsa', sans-serif;
+
+
+}
+/*footer*/
+.footer {
+ grid-column: 1/13;
+ grid-row: 6/7;
+ background-color: rgb(51,102,102);
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+}
+.footer h2 {
+    grid-column: 2/6;
+    font-size: 40px;
+}
+.footer a {
+    grid-column: 2/6;
+}
+.footer a img {
+    width: 20%;
+}
+
+
+
+
+
+
 
 
 
