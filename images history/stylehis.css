@@ -76,6 +76,12 @@ h1 {
 	grid-column: 1/13;
 }
 
+<<<<<<< HEAD
+.wrapper h1{
+	color: #fff;
+}
+=======
+>>>>>>> dc860d73a0c549902060c22c4ce335ad7e37e2e2
 
 .wrapper h1{
 	color: #F9D71C;
