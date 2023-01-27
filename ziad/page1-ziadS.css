@@ -112,15 +112,14 @@ p {
 .introlink {
     grid-row: 6/7;
     grid-column: 1/5;
-    background-color: rgb(249,212,28);
-    background-color: rgb(249,212,28);
+    background-color: rgb(51,102,102);
     padding: 30px;
     border-radius: 3px;
     font-family: Arial, Helvetica, sans-serif;
     
 }
 .introlink a {
-    color: black;
+    color: white;
     bottom: 10px;
     font-size: 13px;
     font-family: 'Noto Sans Tangsa', sans-serif;
@@ -267,7 +266,7 @@ font-family: 'Noto Sans Tangsa', sans-serif;
        margin-top: 0px;
     }
     .intro {
-        background-color: orange;
+        background-color: rgb(249,212,28);
     }
 }
 @media (min-width: 1200px) {
@@ -310,7 +309,7 @@ font-family: 'Noto Sans Tangsa', sans-serif;
     margin-left: 220px;
 }
 .intro {
-    background-color: orange;
+    background-color: rgb(249,212,28);
 }
 .intro img {
     position: absolute;
@@ -331,7 +330,7 @@ font-family: 'Noto Sans Tangsa', sans-serif;
 .introparagraph {
     grid-column: 3/13;
     grid-row: 6/8;
-    border: 10px solid orange;
+    border: 10px solid rgb(249,212,28);;
 }
 .introparagraph {
     grid-row: 5/6;
