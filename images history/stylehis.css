@@ -34,12 +34,12 @@ h1 {
 	grid-row: 1/2;
 }
 .link,
-.linkon,
-.langue {
+.linkon{
 	grid-row: 4/5;
 }
 
 .langue {
+	grid-row: 2/3;
 	grid-column: 6/7;
 }
 .link a,
@@ -72,14 +72,27 @@ h1 {
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(10, 1fr);
+	grid-template-rows: repeat(11, 1fr);
 	grid-column: 1/13;
 }
 
+<<<<<<< HEAD
 .wrapper h1{
 	color: #fff;
 }
+=======
+>>>>>>> dc860d73a0c549902060c22c4ce335ad7e37e2e2
 
+.wrapper h1{
+	color: #F9D71C;
+	font-family: "Bebas Neue";
+}
+.titre h1{
+	color: black;
+}
+.wrapper p {
+	color: #26567A;
+}
 .titre {
 	margin-top: 50%;
 }
@@ -154,7 +167,14 @@ img {
 	grid-row: 10/11;
 	grid-column: 4/6;
 }
-
+.footer {
+	grid-row: 11/12;
+	grid-column: 1/6;
+	background-color: #26567a;
+}
+.footer h2{
+	color: white;
+}
 /**@media (min-width: 768px) {
 	body {
 		background-color: darkolivegreen;
