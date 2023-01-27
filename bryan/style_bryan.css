@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Tangsa:wght@400;500&display=swap');
 body {
-
     margin: 0;
     text-align: center;
 }
 
 #content {
-    width: 700px;
+    width: 500px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px 1000px;
+    grid-template-rows: 200px;
 }
 .header {
     display: grid;
@@ -18,11 +17,13 @@ body {
     grid-template-rows: repeat(6, 1fr);
     grid-column: 1/13;
     grid-row: 1/2;
-    background-color: orange;
+    background-color: white;
 }
 .logo img {
-    width: 125%;
-    margin-left: 40px
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 75%;
+    margin-left: 85px;
     
 }
 .logo {
@@ -46,75 +47,127 @@ body {
 .link a:hover {
     color:black;
 }
-
-#friends {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 30px;
-}
-
 body {
-    color: #fff;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+    background-color: white;
 }
 
-.wrapper {
-    max-width: 75%;
+.container {
+    padding: 2rem;
+    padding-bottom: 400px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 500px);
-    grid-gap: 10px;
+    max-width: 800px;
 }
 
-.wrapper div {
-    background: #3bbced;
-    padding: 30px;
+.top-section {
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.wrapper div:nth-child(even) {
-    background: #777;
-}
-.one p {
-    border: 1px solid black;
-}
-.one, .two, .three, .four, .five, .six {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 5px;
-    border: 1px solid black;
-} 
-
-.one {
-    grid-column: 1 / 1;
-    grid-row: 1 / 2;
+.timeline {
+    position: relative;
+    min-height: 150px;
 }
 
-.two {
-    grid-column: 2 / 2;
-    grid-row: 1 / 2;
+.timeline img {
+    width: 350px;
 }
 
-.three {
-    grid-column: 1 / 1;
-    grid-row: 2 / 3;
+@media only screen and (max-width: 600px) {
+    .timeline img {
+      width: 175px
+    }
+  }
+
+.line {
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 1px);
+    width: 2px;
+    top: -50px;
+    bottom: -50px;
+    background-color: rgb(51, 102, 102);
+    display: none;
 }
 
-.four {
-    grid-column: 2 / 2;
-    grid-row: 2 / 3;
+.line:before,
+.line:after {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: rgb(51, 102, 102);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.five {
-    grid-column: 1 / 1;
-    grid-row: 3 / 4;
+.line:after {
+    bottom: 0;
 }
 
-.six {
-    grid-column: 2 / 2;
-    grid-row: 3 / 4;
+.section {
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 300px;
 }
 
+.section:nth-child(odd) {
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+}
 
+.bead {
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: rgb(51, 102, 102);
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
 
+.content {
+    width: calc(50% - 2rem);
+}
+
+.show-me:nth-child(n) {
+    transform: none;
+    opacity: 1;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: black;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    color: black;
+    background-color: rgb(249, 212, 28);
+}
+
+p {
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    color: black;
+}
