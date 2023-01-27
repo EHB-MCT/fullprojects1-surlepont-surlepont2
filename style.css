@@ -9,7 +9,29 @@ body {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 200px 1000px;
+	grid-template-rows: 200px 400px 500px 350px 50px 300px;
+	position: relative;
+}
+
+#contentTwo {
+	width: 500px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 90px 90px 90px 90px 90px 30px 1000px 90px 90px 30px;
+	position: absolute;
+	grid-gap: 10px;
+	z-index: 2;
+}
+h2 {
+	font-family: "Bebas Neue", cursive;
+	font-size: 40px;
+}
+h1 {
+	font-family: "Bebas Neue", cursive;
+}
+p {
+	font-family: "Noto Sans Tangsa", sans-serif;
 }
 .header {
 	display: grid;
@@ -17,7 +39,6 @@ body {
 	grid-template-rows: repeat(6, 1fr);
 	grid-column: 1/13;
 	grid-row: 1/2;
-	background-color: orange;
 }
 .logo img {
 	width: 125%;
@@ -29,7 +50,7 @@ body {
 }
 .link,
 .linkon {
-	grid-row: 4/5;
+	grid-row: 3/4;
 }
 
 .link a,
@@ -113,4 +134,23 @@ body {
 	.main_content {
 		column-count: 1;
 	}
+}
+
+/*footer*/
+.footer {
+	grid-column: 1/13;
+	grid-row: 6/7;
+	background-color: rgb(51, 102, 102);
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.footer h2 {
+	grid-column: 2/6;
+	font-size: 40px;
+}
+.footer a {
+	grid-column: 2/6;
+}
+.footer a img {
+	width: 20%;
 }
