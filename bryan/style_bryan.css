@@ -20,8 +20,10 @@ body {
     background-color: white;
 }
 .logo img {
-    width: 125%;
-    margin-left: 40px
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 75%;
+    margin-left: 85px;
     
 }
 .logo {
@@ -90,7 +92,7 @@ body {
     width: 2px;
     top: -50px;
     bottom: -50px;
-    background-color: #000;
+    background-color: rgb(51, 102, 102);
     display: none;
 }
 
@@ -102,7 +104,7 @@ body {
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-color: #000;
+    background-color: rgb(51, 102, 102);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -136,7 +138,7 @@ body {
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-color: #000;
+    background-color: rgb(51, 102, 102);
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
