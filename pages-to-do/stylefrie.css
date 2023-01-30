@@ -1,42 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Tangsa:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Tangsa:wght@400;500&display=swap');
 body {
-	margin: 0;
-	text-align: center;
-}
 
-h1 {
-	font-family: "Bebas Neue";
-	font-weight: normal;
-	grid-column: 1/2;
+    margin: 0;
+    text-align: center;
 }
 
 #content {
-	width: 500px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(11, 1fr);
-	grid-template-rows: 200px 1000px;
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 80px 300px 500px 400px 500px 250px;
+    position: relative;
+   
 }
+h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+p, a {
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    ;
+}
+
+/*header*/
 .header {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(6, 1fr);
-	grid-column: 1/13;
-	grid-row: 1/2;
-}
-.logo img {
-	width: 125%;
-	margin-left: 40px;
-}
-.logo {
-	grid-column: 2/4;
-	grid-row: 1/2;
-}
-.link,
-.linkon,
-.langue {
-	grid-row: 4/5;
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column: 1/13;
+    grid-row: 1/2;   
 }
 
 .langue {
@@ -62,6 +54,47 @@ h1 {
 .langue a:hover {
 	color: #4ea4c6;
 }
+
+.logo img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 75%;
+    margin-left: 85px;
+    
+}
+.logo {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.link, .linkon{
+    grid-row: 3/4;
+}
+
+.link a, .linkon a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    font-weight: 500px;
+    transition: color 0.5s;
+}
+.linkon a {
+    color: black;
+}
+.link a:hover {
+    color:black;
+}
+.langue a {
+	text-decoration: none;
+	color: #26567a;
+	font-family: "Noto Sans Tangsa", sans-serif;
+	font-weight: 500px;
+	font-size: 70%;
+	transition: color 0.5s;
+}
+
+.langue a:hover {
+	color: #4ea4c6;
+}
 .link a:hover {
 	color: #4ea4c6;
 }
@@ -74,10 +107,17 @@ h1 {
 * {
 	box-sizing: border-box;
 }
+/*.slider {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-column: 1/5;
+	grid-row: 2/2;
+}
 
 /* Slideshow container */
 .slideshow-container {
-	width: 1000px;
+	width: 500px;
 	position: relative;
 	margin: auto;
 }
@@ -85,6 +125,7 @@ h1 {
 /* Hide the images by default */
 .mySlides {
 	display: none;
+	margin-left: 7%;
 }
 
 /* Next & previous buttons */
@@ -96,7 +137,7 @@ h1 {
 	width: auto;
 	margin-top: -22px;
 	padding: 16px;
-	color: white;
+	color: #17748F;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
@@ -119,7 +160,7 @@ h1 {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #F9D71C;
 }
 
 /* Caption text */
@@ -135,28 +176,31 @@ h1 {
 
 /* Number text (1/3 etc) */
 .numbertext {
-	color: #f2f2f2;
+	color: #26567A;
 	font-size: 12px;
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
+	font-family: 'Bebas Neue';
 }
 
 /* The dots/bullets/indicators */
 .dot {
 	cursor: pointer;
-	height: 15px;
-	width: 15px;
+	height: 25px;
+	width: 25px;
 	margin: 0 2px;
-	background-color: #bbb;
+	background-color: #17748F;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
+	grid-column: 1/13;
+	grid-row: 2/3;
 }
 
 .active,
 .dot:hover {
-	background-color: #717171;
+	background-color: #F9D71C;
 }
 
 /* Fading animation */
@@ -171,5 +215,54 @@ h1 {
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@media (min-width: 768px) {
+    #content {
+        width: 768px;
+        grid-template-rows: 200px 80px 500px 500px 400px 500px 250px;
+    }
+    .header img {
+        width: 150px;
+        margin-left: 135px;
+    }
+	.slideshow-container {
+		width: 750px;
+		position: relative;
+		margin: auto;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	#content {
+		width: 1200px;
+		grid-template-rows: 200px 100px 500px 70px 600px 600px 250px ;
+	}
+	.header img{
+		margin-left: 220px;
+	}
+	.slideshow-container {
+		width: 1000px;
+		position: relative;
+		margin: auto;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+	.dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2_5px;
+		background-color: #17748F;
+		border-radius: 50%;
+		transition: background-color 0.6s ease;
+		grid-column: 1/13;
+		grid-row: 2/3;
+
+		
 	}
 }
