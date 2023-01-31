@@ -117,9 +117,11 @@ p, a {
 
 /* Slideshow container */
 .slideshow-container {
-	width: 500px;
+	width: 450px;
 	position: relative;
 	margin: auto;
+	margin-top: 10%;
+	margin-left: 2%;
 }
 
 /* Hide the images by default */
@@ -133,7 +135,7 @@ p, a {
 .next {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	width: auto;
 	margin-top: -22px;
 	padding: 16px;
@@ -155,6 +157,7 @@ p, a {
 .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
+	margin-right: -7%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -187,15 +190,17 @@ p, a {
 /* The dots/bullets/indicators */
 .dot {
 	cursor: pointer;
-	height: 25px;
-	width: 25px;
+	height: 10px;
+	width: 10px;
 	margin: 0 2px;
 	background-color: #17748F;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
-	grid-column: 1/13;
-	grid-row: 2/3;
+	
+}
+.dotcontainer{
+	margin-left: 40px;
 }
 
 .active,
@@ -219,9 +224,13 @@ p, a {
 }
 
 @media (min-width: 768px) {
-    #content {
+	 #content {
         width: 768px;
         grid-template-rows: 200px 80px 500px 500px 400px 500px 250px;
+    }
+    .header img {
+        width: 150px;
+        margin-left: 135px;
     }
     .header img {
         width: 150px;
@@ -232,7 +241,21 @@ p, a {
 		position: relative;
 		margin: auto;
 		margin-top: 5%;
-		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 3px;
+		background-color: #17748F;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+		
+	}
+	.dotcontainer{
+		margin-left: 150px;
 	}
 }
 
@@ -254,8 +277,8 @@ p, a {
 	}
 	.dot {
 		cursor: pointer;
-		height: 15px;
-		width: 15px;
+		height: 25px;
+		width: 25px;
 		margin: 0 2_5px;
 		background-color: #17748F;
 		border-radius: 50%;
