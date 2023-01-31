@@ -103,18 +103,21 @@ p, a {
 }
 
 .slider{
-	grid-row: 2/3;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
 }
+
+
 /* slideshow */
 
 * {
 	box-sizing: border-box;
 }
 
-
 /* Slideshow container */
 .slideshow-container {
-	width: 450px;
+	width: 800px;
 	position: relative;
 	margin: auto;
 	margin-top: 10%;
