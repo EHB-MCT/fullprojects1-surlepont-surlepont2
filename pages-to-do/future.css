@@ -8,7 +8,6 @@ body {
     width: 95%;
     height: 3500px;
     margin: 0 auto;
-    background-color: red;
 }
 
 .header-logo {
@@ -69,7 +68,7 @@ nav ul li:hover .submenu {
 .text-1 {
     margin-top: 100px;
     width: 100%;
-    background-color: #f9d71c;
+    background-color: #17748F;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -80,7 +79,6 @@ nav ul li:hover .submenu {
     font-family: 'Bebas Neue';
     color: white;
     text-align: center;
-    background-color: aqua;
 }
 
 .text-1 p {
@@ -88,12 +86,12 @@ nav ul li:hover .submenu {
     font-size: 12px;
     text-align: center;
     justify-content: center;
-    background-color: purple;
     font-weight: 500;
+    margin-bottom: 40px;
 }
 
 .text-1 a {
-    background-color: #f65b5c;
+    background-color: #f9d71c;
     padding: 15px;
     color: #FFF;
     text-decoration: none;
@@ -101,8 +99,9 @@ nav ul li:hover .submenu {
     align-items: center;
     text-align: center;
     align-content: center;
+    margin: 0 auto;
 }
 
 .text-1 a:hover {
-    background-color: #333;
+    background-color: #f9bd1d;
 }
