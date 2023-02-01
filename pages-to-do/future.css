@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Tangsa:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 95%;
+    height: 3500px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    background-color: #f9d71c;
+    display:block;
+    text-align:center;
+}
+
+li {
+    list-style:none; 
+    display:inline-block;
+    font-family: 'Bebas Neue';
+}
+  
+a {
+    background-color: #f9d71c;
+    color:#fff;
+    display:block;
+    font-size:2em;
+    text-decoration:none;
+    padding:1em .5em;
+    line-height:1em;
+    font-size: 25px;
+}
+  
+a:hover {
+    background-color: #f9bd1d;
+}
+  
+/* Start submenu */
+nav ul li:hover .submenu {
+    display:block;
+}
+  
+.submenu {
+    display:none;
+    position:absolute;
+    width:250px;
+}
+
+.submenu li {display:block;}
+.submenu li a {
+    font-size:1.5em;
+    width:100%;
+}
+
+.text-1 {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #17748F;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-1 h1 {
+    font-family: 'Bebas Neue';
+    color: white;
+    text-align: center;
+}
+
+.text-1 p {
+    font-family: 'Noto Sans Tangsa';
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.text-1 a {
+    background-color: #f9d71c;
+    padding: 15px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.text-1 a:hover {
+    background-color: #f9bd1d;
+}
