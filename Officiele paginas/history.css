@@ -115,12 +115,10 @@ body {
     background-color: red;
     display: none;
 }
-#footer {
-    width: 600px;;
-}
 
 
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
     .timeline img {
       width: 175px
     }
@@ -134,9 +132,7 @@ body {
     .timeline img {
         width: 375px;
     }
-    #footer img {
-        width:70%;
-    }
+
 
 }
   @media (min-width: 1200px) {
@@ -154,12 +150,7 @@ body {
     .timeline img:hover {
         scale: 1.5;
         }
-     #footer img {
-        width: 50%;
-     }
-     #footer {
-        width: 1200px;
-     }
+    
   }
 
 .line {
@@ -250,51 +241,48 @@ p {
     color: black;
 }
 
-#footer {
-    background-color: rgb(51,102,102);
-    display: grid;
+#contentTwo {
+    width: 1200px;
     margin: 0 auto;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 50px);
+    grid-template-rows: 250px;
+    
+}
+
+.footer {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     border-radius: 3px;
-    position: absolute;
 }
 
-#footer h2 {
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 300;
-    font-size: 40px;
-    color: white;
+.footer a {
+background-color: transparent;
 }
-
-#footer img {
-    width: 75px;
-    margin-left: 200px;
+.footer img:hover  {
+    transform: translateY(-20%) scale(1.1);
+    transition: all 0.5s;
 }
-
-    #footer img {
-        margin-top: 30px;
-        width: 50%;
+.facebook {
+       grid-row: 4/5;
+       grid-column: 5/6;
        }
-       
-    #footer img:hover  {
-     transform: translateY(-20%) scale(1.1);
-     transition: all 0.5s;
-    }
-    .facebook {
-        grid-row: 4/5;
-        grid-column: 5/6;
-        }
-    .insta {
-        grid-row: 4/5;
-        grid-column: 6/7;
-    }
-    .mail {
-        grid-row: 4/5;
-        grid-column: 7/8;
-    }
-    .maps {
-        grid-row: 4/5;
-        grid-column: 8/9;
+.insta {
+    grid-row: 4/5;
+    grid-column: 6/7;
+}
+   .mail {
+       grid-row: 4/5;
+       grid-column: 7/8;
+   }
+   .maps {
+       grid-row: 4/5;
+       grid-column: 8/9;
+   }
+   .footer img {
+    margin-top: 30px;
+    width: 60%;
     }
    
