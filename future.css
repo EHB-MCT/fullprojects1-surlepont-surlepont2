@@ -27,7 +27,7 @@ body {
     text-align: center;   
 }
 
-.langue {
+.language {
     grid-column: 6/7;
 }
 
@@ -39,7 +39,7 @@ body {
     font-weight: 500px;
     transition: color 0.5s;
 }
-.langue a {
+.language a {
     text-decoration: none;
     color: #26567a;
     font-family: "Noto Sans Tangsa", sans-serif;
@@ -48,7 +48,7 @@ body {
     transition: color 0.5s;
 }
 
-.langue a:hover {
+.language a:hover {
     color: #4ea4c6;
 }
 
