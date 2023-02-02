@@ -137,19 +137,19 @@ body {
 }
   @media (min-width: 1200px) {
     #content {
-        width: 1200px;;
+        width: 1200px;
     }
     #content img {
         margin-left: 250px;
     }
     .timeline img{
-        width: 375px;
-        transition: 0.5s;
-        
+        width: 375px;  
     }
-    .timeline img:hover {
-        scale: 1.5;
-        }
+    .logo img {
+        width: 32%;      
+    }
+
+    
     
   }
 
