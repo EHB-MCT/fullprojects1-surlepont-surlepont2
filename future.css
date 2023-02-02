@@ -506,6 +506,7 @@ input [name="r"] {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    height: 600px;
 }
 
 .text-4-texts {
@@ -523,7 +524,7 @@ input [name="r"] {
 .text-4 a {
     font-family:'Noto Sans Tangsa';;
     background-color: #17748F;
-    padding: 20px 0px 20px 0px;
+    padding: 15px;
     color: #FFF;
     text-decoration: none;
     font-weight: bold;
@@ -536,10 +537,9 @@ input [name="r"] {
 }
 
 .text-4 a:hover {
-    background-color: #f9bd1d;
-    scale: 1.2;
-    
+    border: 2px solid black;
 }
+
 
 @media (max-width: 768px) {
     .text-4 {
@@ -568,9 +568,9 @@ input [name="r"] {
     }
     
     .text-4 a {
-        font-family: 'Bebas Neue';
+        font-family:'Noto Sans Tangsa';;
         background-color: #17748F;
-        padding: 15px;
+        padding: 20px 0px 20px 0px;
         color: #FFF;
         text-decoration: none;
         font-weight: bold;
@@ -578,12 +578,11 @@ input [name="r"] {
         text-align: center;
         align-content: center;
         margin: 0 auto;
-    }
-    
-    .text-4 a:hover {
-        background-color: #f9bd1d;
+        font-size: 18px;
+        transition: scale 0.5s;
     }
 }
+
 /*footer*/
 #content {
     width: 1200px;
@@ -600,11 +599,13 @@ input [name="r"] {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
     border-radius: 3px;
+    text-align: center;
 }
 
 .footer a {
 background-color: transparent;
 }
+
 .footer img:hover  {
     transform: translateY(-20%) scale(1.1);
     transition: all 0.5s;
@@ -627,7 +628,7 @@ background-color: transparent;
    }
    .footer img {
     margin-top: 30px;
-    width: 80%;
+    width: 55%;
     }
 
 
