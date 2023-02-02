@@ -13,12 +13,9 @@ body {
 	position: relative;
 }
 
-#content{
-	row
-}
 h1 {
 	font-family: "Bebas Neue", cursive;
-	margin-bottom: 5%;
+	margin-top: 10%;
 }
 p,
 a {
@@ -63,7 +60,7 @@ a {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	width: 75%;
-	margin-left: 85px;
+	margin-left: 150px;
 }
 .logo {
 	grid-column: 2/4;
@@ -107,11 +104,7 @@ a {
 	color: #4ea4c6;
 }
 
-.slider {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	position: relative;
-}
+
 
 /* slideshow */
 
@@ -124,8 +117,7 @@ a {
 	width: 800px;
 	position: relative;
 	margin: auto;
-	margin-top: 10%;
-	margin-left: 2%;
+	
 }
 
 /* Hide the images by default */
@@ -139,6 +131,44 @@ a {
 	position: relative;
 	float: left;
 }
+
+.mySlides img.small {
+	width: 10% !important;
+}
+.mySlides img.bottom{
+	position: absolute;
+	bottom: -360px;
+	left: 410px;
+}
+
+.mySlides img.vertical {
+	width: 35% !important ;
+}
+
+.mySlides img.top {
+	position: absolute;
+	top: 80px;
+	left: 650px;
+}
+.mySlides img.medium {
+	position: absolute;
+	width: 35% !important;
+	bottom: -400px;
+	left: 360px;
+}
+.mySlides img.left {
+	position: absolute;
+	width: 35% !important;
+	bottom: -450px;
+	left: 130px;
+}
+.mySlides img.right {
+	position: absolute;
+	bottom: -490px;
+	left: 450px;
+}
+
+
 
 .mySlides p {
 	width: 40% !important;
@@ -174,7 +204,7 @@ a {
 .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
-	margin-right: -7%;
+
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -199,54 +229,6 @@ a {
 	animation-duration: 1.5s;
 }
 
-.footer {
-    grid-row: 7/8;
-    grid-column: 1/13;
-    background-color: #26567a;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    border-radius: 3px;
-    }
-    .footer h1 {
-        color: white;
-        grid-row: 2/3;
-        grid-column: 3/11;
-    }
-    .footer h2 {
-        color: white;
-        grid-row: 2/3;
-        grid-column: 4/9;
-        position: absolute;
-        margin-top: 150px;
-        right: -50px;
-
-    }
-    .footer img {
-        margin-top: 30px;
-        width: 100%;
-       }
-       
-    .footer img:hover  {
-     transform: translateY(-20%) scale(1.1);
-     transition: all 0.5s;
-    }
-    .facebook {
-        grid-row: 4/5;
-        grid-column: 5/6;
-        }
-    .insta {
-        grid-row: 4/5;
-        grid-column: 6/7;
-    }
-    .mail {
-        grid-row: 4/5;
-        grid-column: 7/8;
-    }
-    .maps {
-        grid-row: 4/5;
-        grid-column: 8/9;
-    }
 
 @keyframes fade {
 	from {
@@ -270,12 +252,18 @@ a {
 		width: 150px;
 		margin-left: 135px;
 	}
+
 	.slideshow-container {
 		width: 750px;
 		position: relative;
 		margin: auto;
 		margin-top: 5%;
 		margin-right: 5%;
+	}
+	.mySlides img.bottom{
+		position: absolute;
+		bottom: -340px;
+		left: 350px;
 	}
 	.footer img {
 		margin-top: 30px;
@@ -293,16 +281,60 @@ a {
 		width: 1200px;
 		grid-template-rows: 200px 500px;
 	}
+	.header{
+		margin-left: -8%;
+	}
 	.header img {
-		margin-left: 220px;
+		margin-left: 350px;
 	}
 	.slideshow-container {
-		width: 1000px;
+		width: 1050px;
 		position: relative;
 		margin: auto;
 		margin-top: 5%;
-		margin-left: 5%;
+		margin-left: 10%;
 	}
+	.mySlides img.bottom{
+		position: absolute;
+		bottom: -350px;
+		left: 580px;
+	}
+	.mySlides img.medium{
+		position: absolute;
+		bottom: -450px;
+		left: 450px;
+	}
+	.mySlides img.left{
+		position: absolute;
+		bottom: -550px;
+		left: 450px;
+	}
+	.mySlides img.right{
+		position: absolute;
+		bottom: -510px;
+		left: 700px;
+	}
+	.mySlides img.mitop{
+		position: absolute;
+		bottom: -490px;
+		left: 700px;
+	}
+	.mySlides img.mibottom{
+		position: absolute;
+		bottom: -210px;
+		left: 550px;
+	}
+	.mySlides img.dem{
+		position: absolute;
+		bottom: -350px;
+		left: 700px;
+	}
+	.mySlides img.book{
+		position: absolute;
+		bottom: -370px;
+		left: 640px;
+	}
+	
 	.footer img {
 		margin-top: 30px;
 		width: 70%;
