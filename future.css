@@ -19,67 +19,67 @@ body {
     }
 }
 
-.header-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+.header {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 1/13;
+    grid-row: 1/2;
+    text-align: center;   
 }
 
-.header-logo img {
-    width: 100px;
-    height: auto;
+.langue {
+    grid-column: 6/7;
 }
 
-nav {
-    background-color: #f9d71c;
-    display:block;
-    text-align:center;
+.link a,
+.linkon a {
+    text-decoration: none;
+    color: #26567a;
+    font-family: "Noto Sans Tangsa", sans-serif;
+    font-weight: 500px;
+    transition: color 0.5s;
+}
+.langue a {
+    text-decoration: none;
+    color: #26567a;
+    font-family: "Noto Sans Tangsa", sans-serif;
+    font-weight: 500px;
+    font-size: 70%;
+    transition: color 0.5s;
 }
 
-ul{
-    padding: 0;
+.langue a:hover {
+    color: #4ea4c6;
 }
 
-
-li {
-    list-style:none; 
-    display:inline-block;
-    font-family: 'Bebas Neue';
-}
-  
-a {
-    background-color: #f9d71c;
-    color:#fff;
-    display:block;
-    font-size:2em;
-    text-decoration:none;
-    padding:1em .5em;
-    line-height:1em;
-    font-size: 25px;
-}
-  
-a:hover {
-    background-color: #f9bd1d;
-}
-  
-/* Start submenu */
-nav ul li:hover .submenu {
-    display:block;
-}
-  
-.submenu {
-    display:none;
-    position:absolute;
-    width:250px;
+.logo img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 150px;
+    margin-left: 300px;
 }
 
-.submenu li {display:block;}
-.submenu li a {
-    font-size:1.5em;
-    width:100%;
+.logo {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.link, .linkon{
+    grid-row: 3/4;
 }
 
+.link a, .linkon a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    font-weight: 500px;
+    transition: color 0.5s;
+}
+.linkon a {
+    color: black;
+}
+.link a:hover {
+    color:black;
+}
 .text-1 {
     margin-top: 50px;
     width: 100%;
