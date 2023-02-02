@@ -21,7 +21,9 @@ p,
 a {
 	font-family: "Noto Sans Tangsa", sans-serif;
 }
-
+p{
+	line-height: 25px;
+}
 
 /*header*/
 .header {
@@ -135,6 +137,9 @@ a {
 .mySlides img.small {
 	width: 10% !important;
 }
+.mySlides img.medium {
+	width: 35% !important;
+}
 .mySlides img.bottom{
 	position: absolute;
 	bottom: -360px;
@@ -150,12 +155,7 @@ a {
 	top: 80px;
 	left: 650px;
 }
-.mySlides img.medium {
-	position: absolute;
-	width: 35% !important;
-	bottom: -400px;
-	left: 360px;
-}
+
 .mySlides img.left {
 	position: absolute;
 	width: 35% !important;
@@ -294,47 +294,105 @@ a {
 		margin-top: 5%;
 		margin-left: 10%;
 	}
-	.mySlides img.bottom{
+	.mySlides img.dog{
 		position: absolute;
-		bottom: -350px;
+		top: -10px;
+		right: 50px;
+	}
+	.mySlides img.dogbottom{
+		position: absolute;
+		top: 280px;
+		right: 370px;
+	}
+	.mySlides img.flag{
+		width: 30% !important;
+	}
+	.mySlides img.fbottom{
+		width: 25% !important;
+		top: 190px;
+		right: 230px;
+	}
+	.mySlides img.stop{
+		bottom: 15px;
+		left: 250px;
+	}
+	.mySlides img.abottom{
+		width: 25% !important;
+		top: -10px;
+		right: -100px;
+	}
+	.mySlides img.tree{
+		top: -20px;
+		left: 520px;
+	}
+
+	.mySlides img.sun{
+		width: 35% !important;
+		top: 20px;
+		right: -70px;
+	}
+	.mySlides img.beer{
+		bottom: -10px;
+		left: 400px;
+	}
+	.mySlides img.bottombeer{
+		position: absolute;
+		bottom: -420px;
+		left: 600px;
+	}
+	.mySlides img.ball{
+		position: absolute;
+		bottom: -90px;
 		left: 580px;
 	}
-	.mySlides img.medium{
+	.mySlides img.bottomball{
 		position: absolute;
-		bottom: -450px;
-		left: 450px;
+		bottom: -290px;
+		left: 950px;
 	}
-	.mySlides img.left{
-		position: absolute;
-		bottom: -550px;
-		left: 450px;
-	}
-	.mySlides img.right{
-		position: absolute;
-		bottom: -510px;
-		left: 700px;
-	}
-	.mySlides img.mitop{
+	.mySlides img.boat{
 		position: absolute;
 		bottom: -490px;
 		left: 700px;
 	}
-	.mySlides img.mibottom{
+	.mySlides img.run{
 		position: absolute;
-		bottom: -210px;
-		left: 550px;
+		bottom: -200px;
+		left: 440px;
+	}
+	.mySlides img.bottomrun{
+		position: absolute;
+		bottom: -400px;
+		left: 900px;
 	}
 	.mySlides img.dem{
+		width: 15% !important;
 		position: absolute;
-		bottom: -350px;
-		left: 700px;
+		bottom: -400px;
+		left: 750px;
+	}
+	.mySlides img.birds{
+		bottom: -30px;
+		left: 150px;
 	}
 	.mySlides img.book{
+		width: 20% !important;
 		position: absolute;
-		bottom: -370px;
-		left: 640px;
+		bottom: -400px;
+		left: 550px;
 	}
-	
+	.mySlides img.textbook{
+		width: 20% !important;
+		position: absolute;
+		bottom: -350px;
+		left: 550px;
+	}
+	.mySlides img.bike{
+		width: 35% !important;
+		position: absolute;
+		bottom: -350px;
+		left: 550px;
+	}
 	.footer img {
 		margin-top: 30px;
 		width: 70%;
