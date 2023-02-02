@@ -115,6 +115,9 @@ body {
     background-color: red;
     display: none;
 }
+#footer {
+    width: 600px;;
+}
 
 
 @media (min-width: 768px) {
@@ -130,6 +133,9 @@ body {
     }
     .timeline img {
         width: 375px;
+    }
+    #footer img {
+        width:70%;
     }
 
 }
@@ -147,8 +153,13 @@ body {
     }
     .timeline img:hover {
         scale: 1.5;
-        
-    }
+        }
+     #footer img {
+        width: 50%;
+     }
+     #footer {
+        width: 1200px;
+     }
   }
 
 .line {
@@ -239,21 +250,51 @@ p {
     color: black;
 }
 
-.footer {
+#footer {
     background-color: rgb(51,102,102);
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    align-items: center;
-    height: 250px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    border-radius: 3px;
+    position: absolute;
 }
 
-.footer h2 {
+#footer h2 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     font-size: 40px;
     color: white;
 }
 
-.footer img {
+#footer img {
     width: 75px;
+    margin-left: 200px;
 }
+
+    #footer img {
+        margin-top: 30px;
+        width: 50%;
+       }
+       
+    #footer img:hover  {
+     transform: translateY(-20%) scale(1.1);
+     transition: all 0.5s;
+    }
+    .facebook {
+        grid-row: 4/5;
+        grid-column: 5/6;
+        }
+    .insta {
+        grid-row: 4/5;
+        grid-column: 6/7;
+    }
+    .mail {
+        grid-row: 4/5;
+        grid-column: 7/8;
+    }
+    .maps {
+        grid-row: 4/5;
+        grid-column: 8/9;
+    }
+   
