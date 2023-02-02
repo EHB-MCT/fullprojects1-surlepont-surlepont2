@@ -139,25 +139,56 @@ img:hover {
 	opacity: 1;
 }
 
-/*footer*/
-
-.footer {
-	grid-row: 7/8;
-	grid-column: 1/13;
-	background-color: #26567a;
-}
-.footer h1 {
-	color: white;
-}
-.footer img {
-	margin-top: 30px;
-}
 
 /* responsive */
 @media (min-width: 1200px) {
 	.main_content {
 		column-count: 4;
 	}
+	#contentTwo {
+		width: 1200px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 250px;
+		
+	}
+	
+	.footer {
+		grid-column: 1/13;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		border-radius: 3px;
+	}
+	
+	.footer a {
+	background-color: transparent;
+	}
+	.footer img:hover  {
+		transform: translateY(-20%) scale(1.1);
+		transition: all 0.5s;
+	}
+	.facebook {
+		   grid-row: 4/5;
+		   grid-column: 5/6;
+		   }
+	.insta {
+		grid-row: 4/5;
+		grid-column: 6/7;
+	}
+	   .mail {
+		   grid-row: 4/5;
+		   grid-column: 7/8;
+	   }
+	   .maps {
+		   grid-row: 4/5;
+		   grid-column: 8/9;
+	   }
+
+	
+	
+	
 }
 
 /*
@@ -234,6 +265,10 @@ img:hover {
 	margin-top: 10px;
 	padding-top: 10px;
 }
+.footer img {
+	margin-top: 30px;
+	width: 8%;
+	}
 
 @media (min-width: 1200px) {
 	#content {
@@ -292,4 +327,8 @@ img:hover {
 		grid-column: 1/2;
 		padding-top: 20px;
 	}
+	.footer img {
+		margin-top: 30px;
+		width: 60%;
+		}
 }

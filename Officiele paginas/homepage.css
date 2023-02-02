@@ -257,19 +257,19 @@
      transition: all 0.5s;
     }
     .facebook {
-        grid-row: 4/5;
+        grid-row: 5/6;
         grid-column: 5/6;
         }
     .insta {
-        grid-row: 4/5;
+        grid-row: 5/6;
         grid-column: 6/7;
     }
     .mail {
-        grid-row: 4/5;
+        grid-row: 5/6;
         grid-column: 7/8;
     }
     .maps {
-        grid-row: 4/5;
+        grid-row: 5/6;
         grid-column: 8/9;
     }
    
@@ -350,7 +350,7 @@
     
             #content {
                 width: 1200px;
-                grid-template-rows: 200px 100px 500px 70px 600px 600px 250px ;
+                grid-template-rows: 200px 100px 500px 70px 600px 600px 300px ;
             }
             .header img{
                 margin-left: 250px;
@@ -417,13 +417,6 @@
             .footer img {
                 margin-top: 30px;
                 width: 50%;
-                }
-
-                .footer h2 {
-                    margin-top: 60px;
-                    margin-left: 80px;
-                    font-size: 40px;
-                    
                 }
             
         
