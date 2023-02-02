@@ -232,6 +232,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    border-radius: 3px;
     }
     .footer h1 {
         color: white;

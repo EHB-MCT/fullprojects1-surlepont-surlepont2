@@ -99,12 +99,55 @@ body {
 }
 
 .timeline img {
-    width: 350px;
+    width: 270px;
+}
+#absol {
+    align-items: left;
+    margin-top: 250px;
+    width:400px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(10, 500px);
+    position: absolute;
+    grid-gap: 5px;
+}
+#absol div {
+    background-color: red;
+    display: none;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media (min-width: 768px) {
     .timeline img {
       width: 175px
+    }
+    #content {
+        width: 768px;
+    }
+    .header img {
+        width: 150px;
+        margin-left: 155px;
+    }
+    .timeline img {
+        width: 375px;
+    }
+
+}
+  @media (min-width: 1200px) {
+    #content {
+        width: 1200px;;
+    }
+    #content img {
+        margin-left: 250px;
+    }
+    .timeline img{
+        width: 375px;
+        transition: 0.5s;
+        
+    }
+    .timeline img:hover {
+        scale: 1.5;
+        
     }
   }
 
