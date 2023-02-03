@@ -27,14 +27,15 @@ p{
 
 /*header*/
 .header {
-	display: grid;
+	display: grid; 
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(6, 1fr);
 	grid-column: 1/13;
 	grid-row: 1/2;
+	text-align: center;   
 }
 
-.langue {
+.language {
 	grid-column: 6/7;
 }
 .link a,
@@ -62,22 +63,22 @@ p{
 	margin-top: 25px;
 	margin-bottom: 25px;
 	width: 75%;
-	margin-left: 150px;
+	margin-left: 85px;
+	margin-left: -50px;
+	
 }
 .logo {
 	grid-column: 2/4;
 	grid-row: 1/2;
 }
-.link,
-.linkon {
+.link, .linkon{
 	grid-row: 3/4;
 }
 
-.link a,
-.linkon a {
+.link a, .linkon a{
 	text-decoration: none;
 	color: gray;
-	font-family: "Noto Sans Tangsa", sans-serif;
+	font-family: 'Noto Sans Tangsa', sans-serif;
 	font-weight: 500px;
 	transition: color 0.5s;
 }
@@ -85,27 +86,8 @@ p{
 	color: black;
 }
 .link a:hover {
-	color: black;
+	color:black;
 }
-.language a {
-	text-decoration: none;
-	color: #26567a;
-	font-family: "Noto Sans Tangsa", sans-serif;
-	font-weight: 500px;
-	font-size: 70%;
-	transition: color 0.5s;
-}
-
-.language a:hover {
-	color: #4ea4c6;
-}
-.link a:hover {
-	color: #4ea4c6;
-}
-.linkon a:hover {
-	color: #4ea4c6;
-}
-
 
 
 /* slideshow */
@@ -398,7 +380,7 @@ p{
 	}
 
 	.mySlides img.sun{
-		width: 35% !important;
+		width: 25% !important;
 		top: 20px;
 		right: -70px;
 	}
