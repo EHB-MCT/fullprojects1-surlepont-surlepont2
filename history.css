@@ -11,51 +11,52 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 200px;
 }
+
 .header {
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column: 1/13;
-    grid-row: 1/2;
-    background-color: white;
+    grid-row: 1/2;   
 }
+
+.language {
+    grid-column: 6/7;
+}
+.link a,
+.linkon a {
+    text-decoration: none;
+    color: #26567a;
+    font-family: "Noto Sans Tangsa", sans-serif;
+    font-weight: 500px;
+    transition: color 0.5s;
+}
+.language a {
+    text-decoration: none;
+    color: #26567a;
+    font-family: "Noto Sans Tangsa", sans-serif;
+    font-weight: 500px;
+    font-size: 70%;
+    transition: color 0.5s;
+}
+
+.language a:hover {
+    color: #4ea4c6;
+}
+
 .logo img {
     margin-top: 25px;
     margin-bottom: 25px;
     width: 75%;
     margin-left: 85px;
+    
 }
-
 .logo {
     grid-column: 2/4;
     grid-row: 1/2;
 }
-.link, .linkon, .langue{
-	grid-row: 4/5;
-}
-
-.langue {
-	grid-column: 6/7;
-}
-.link a,
-.linkon a {
-	text-decoration: none;
-	color: #26567a;
-	font-family: "Noto Sans Tangsa", sans-serif;
-	font-weight: 500px;
-	transition: color 0.5s;
-}
-.langue a {
-	text-decoration: none;
-	color: #26567a;
-	font-family: "Noto Sans Tangsa", sans-serif;
-	font-weight: 500px;
-	font-size: 70%;
-	transition: color 0.5s;
-}
-
-.langue a:hover {
-	color: #4ea4c6;
+.link, .linkon{
+    grid-row: 3/4;
 }
 
 .link a, .linkon a{
@@ -71,6 +72,7 @@ body {
 .link a:hover {
     color:black;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -148,10 +150,7 @@ body {
     .logo img {
         width: 32%;      
     }
-
-    
-    
-  }
+}
 
 .line {
     position: absolute;
