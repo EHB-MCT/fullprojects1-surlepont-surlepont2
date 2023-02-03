@@ -22,66 +22,67 @@ a {
 
 /*header*/
 .header {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(1, 1fr);
-	grid-column: 1/13;
-	grid-row: 1/2;
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 1/13;
+    grid-row: 1/2;
+    text-align: center;   
 }
 
-.langue {
-	grid-column: 6/7;
+.language {
+    grid-column: 6/7;
 }
+
 .link a,
 .linkon a {
-	text-decoration: none;
-	color: #26567a;
-	font-family: "Noto Sans Tangsa", sans-serif;
-	font-weight: 500px;
-	transition: color 0.5s;
+    text-decoration: none;
+    color: #26567a;
+    font-family: "Noto Sans Tangsa", sans-serif;
+    font-weight: 500px;
+    transition: color 0.5s;
 }
-.langue a {
-	text-decoration: none;
-	color: #26567a;
-	font-family: "Noto Sans Tangsa", sans-serif;
-	font-weight: 500px;
-	font-size: 70%;
-	transition: color 0.5s;
+.language a {
+    text-decoration: none;
+    color: #26567a;
+    font-family: "Noto Sans Tangsa", sans-serif;
+    font-weight: 500px;
+    font-size: 70%;
+    transition: color 0.5s;
 }
 
-.langue a:hover {
-	color: #4ea4c6;
+.language a:hover {
+    color: #4ea4c6;
 }
 
 .logo img {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	width: 75%;
-	margin-left: 85px;
-}
-.logo {
-	grid-column: 2/4;
-	grid-row: 1/2;
-}
-.link,
-.linkon {
-	grid-row: 3/4;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 150px;
+    margin-left: 300px;
 }
 
-.link a,
-.linkon a {
-	text-decoration: none;
-	color: gray;
-	font-family: "Noto Sans Tangsa", sans-serif;
-	font-weight: 500px;
-	transition: color 0.5s;
+.logo {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.link, .linkon{
+    grid-row: 3/4;
+}
+
+.link a, .linkon a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    font-weight: 500px;
+    transition: color 0.5s;
 }
 .linkon a {
-	color: black;
+    color: black;
 }
 .link a:hover {
-	color: black;
+    color:black;
 }
+
 /* gallery version */
 .content_title {
 	margin-bottom: 40px;
@@ -276,7 +277,7 @@ img:hover {
 		/* grid-template-rows: 200px 100px 500px 70px 600px 600px 250px; */
 	}
 	.header img {
-		margin-left: 220px;
+		margin-left: 250px;
 	}
 	/* .absoluteintro {
 		 grid-template-rows: repeat(12, minmax(20px, auto)); 
